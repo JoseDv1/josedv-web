@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"paths": {
+		 "@firebase_app/*": ["src/firebase/*"],
+		 "@components/*": ["src/components/*"],
+		},
+		"baseUrl": ".",
+	}
+}
