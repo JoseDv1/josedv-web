@@ -46,6 +46,7 @@ body {
 
 	overflow-x: hidden;
 	animation: move-bg 60s ease-in-out infinite;
+	z-index: -10;
 }
 
 @keyframes move-bg {
