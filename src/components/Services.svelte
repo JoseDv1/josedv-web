@@ -28,7 +28,6 @@
 		justify-content: center;
 		align-items: center;
 		width: 80%;
-		z-index: -1;
 		text-align: center;
 		gap: 1rem;
 	}

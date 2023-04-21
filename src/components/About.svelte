@@ -2,7 +2,7 @@
 	<div class="presentation">
 		<div class="description">
 			<div class="header">
-				<span>Jose David Villegas</span>
+				<span>Jose David Villegas - 19 Años</span>
 				<div class="social">
 					<a href="https://github.com/JoseDv1">Github</a>
 					<a href="https://www.linkedin.com/in/josedv1/"> LinkedIn</a>
@@ -27,7 +27,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		z-index: 1;
 	}
 
 	.presentation {
@@ -43,7 +42,6 @@
 		gap: 1.5rem;
 		justify-content: center;
 		align-items: center;
-		z-index: -1;
 	}
 
 	.presentation p {
