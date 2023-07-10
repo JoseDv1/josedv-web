@@ -1,40 +1,34 @@
-<div class="about" id="about">
-	<div class="presentation">
-		<div class="description">
-			<div class="header">
-				<span>Jose David Villegas - 19 Años</span>
-				<div class="social">
-					<a href="https://github.com/JoseDv1">Github</a>
-					<a href="https://www.linkedin.com/in/josedv1/"> LinkedIn</a>
-					<a href="https://twitter.com/Jose_Dv1">Twitter</a>
-				</div>
+<section>
+	<article>
+		<header>
+			<span>Jose David Villegas - 19 Años</span>
+			<div class="social">
+				<a href="https://github.com/JoseDv1">Github</a>
+				<a href="https://www.linkedin.com/in/josedv1/"> LinkedIn</a>
+				<a href="https://twitter.com/Jose_Dv1">Twitter</a>
+				<a href="https://cvapp.es/r/O5AqfB4py" target="_blank">Curriculum Vitae</a>
 			</div>
-			<h1>Web Developer</h1>
-			<p>
-				Estoy en busca de experiencia y oportunidades para crecer profesionalmente. <br />
-				Soy una persona competitiva que busca siempre el mejor resultado posible en cada proyecto. Me
-				adapto fácilmente a los cambios y a las nuevas ideas, y valoro la diversidad de opiniones y perspectivas.
-				Me gustan los retos y me enfoco en lo que hago, siempre busco aprender y mejorar.
-			</p>
-		</div>
-		<img src="/Jose.webp" alt="JoseDv1" />
-	</div>
-</div>
+		</header>
+		<h1>Web Developer</h1>
+		<p>
+			Estoy en busca de experiencia y oportunidades para crecer profesionalmente. <br />
+			Soy alguien competitivo que busca siempre el mejor resultado posible en cada proyecto. Me adapto
+			fácilmente a los cambios y a las nuevas ideas, y valoro la diversidad de opiniones y perspectivas.
+			Me gustan los retos y me enfoco en lo que hago, siempre busco aprender y mejorar. Preparado para
+			utilizar mis habilidades y pasión para impulsar la misión de una compañía. Aporto una actitud positiva,
+			la voluntad y motivación
+		</p>
+	</article>
+	<img src="/Jose.webp" alt="JoseDv1" />
+</section>
 
 <style>
-	.about {
-		margin-top: 4rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.presentation {
-		max-width: 80%;
-		max-height: 70%;
+	section {
 		padding: 40px;
 		border-radius: 50px;
-		-webkit-backdrop-filter: blur(5px);
+		-wenkit-backdrop-filter: blur(5px);
+		-moz-backdrop-filter: blur(5px);
+		-o-backdrop-filter: blur(5px);
 		backdrop-filter: blur(5px);
 		background-color: rgba(255, 255, 255, 0.5);
 		box-shadow: var(--default-shadow);
@@ -42,13 +36,10 @@
 		gap: 1.5rem;
 		justify-content: center;
 		align-items: center;
-	}
-
-	.presentation p {
 		font-size: 1.5rem;
 	}
 
-	.presentation img {
+	section img {
 		width: 200px;
 		height: 200px;
 		border-radius: 50%;
@@ -59,31 +50,40 @@
 
 	.social {
 		display: flex;
+		flex-wrap: wrap;
 		gap: 1rem;
 	}
 
-	.header {
+	header {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
 	}
 
-	@media (max-width: 769px) {
-		.presentation {
+	@media (max-width: 1000px) {
+		section {
 			font-size: 1.2rem;
 			display: flex;
 			flex-direction: column-reverse;
 			gap: 1.5rem;
 		}
 
-		.presentation img {
+		section img {
 			width: 150px;
 			height: 150px;
 		}
 
-		.presentation p {
+		section p {
 			font-size: 1.2rem;
+		}
+	}
+
+	@media (max-width: 500px) {
+		.social {
+			justify-content: center;
+			align-items: center;
+			gap: 0.5rem;
 		}
 	}
 </style>

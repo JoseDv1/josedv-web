@@ -7,26 +7,25 @@
 	export let github;
 </script>
 
-<div class="project-item">
-	<div class="project-item__img">
-		<img src={img} alt={title} />
-	</div>
-	<div class="project-item__content">
+<section>
+	<img src={img} alt={title} />
+
+	<article>
 		<h3>{title}</h3>
 		<p>
 			{description}
 		</p>
-		<div class="project-item__content__links">
+		<div>
 			{#if live}
 				<a href={live} target="_blank">Live</a>
 			{/if}
 			<a href={github} target="_blank">Github</a>
 		</div>
-	</div>
-</div>
+	</article>
+</section>
 
 <style>
-	.project-item {
+	section {
 		padding: 1rem 2rem;
 
 		width: 100%;
@@ -36,19 +35,22 @@
 		justify-content: space-around;
 		align-items: center;
 		gap: 2rem;
-		border: #fff solid 1px;
 		border-radius: 50px;
+
 		-wenkit-backdrop-filter: blur(5px);
+		-moz-backdrop-filter: blur(5px);
+		-o-backdrop-filter: blur(5px);
 		backdrop-filter: blur(5px);
+
 		background-color: rgba(255, 255, 255, 0.5);
 		box-shadow: var(--default-shadow);
 	}
-	.project-item__img img {
+	section img {
 		height: auto;
 		width: 200px;
 		object-fit: cover;
 	}
-	.project-item__content {
+	article {
 		display: flex;
 		flex: 1;
 		flex-direction: column;
@@ -57,14 +59,14 @@
 		text-align: left;
 	}
 
-	.project-item__content__links {
+	section article div {
 		width: 100%;
 		margin-top: 0.5rem;
 		display: flex;
 		gap: 1rem;
 		justify-content: flex-end;
 	}
-	.project-item__content__links a {
+	section article div a {
 		color: #fff;
 		background-color: var(--primary);
 		box-shadow: var(--default-shadow);

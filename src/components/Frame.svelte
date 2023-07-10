@@ -15,13 +15,14 @@
 		justify-content: center;
 		align-items: center;
 
-		padding: 0.5rem;
+		padding: 1rem;
+		width: 150px;
 
-		height: 100%;
-		width: 100%;
-
-		-webkit-backdrop-filter: blur(5px);
+		-wenkit-backdrop-filter: blur(5px);
+		-moz-backdrop-filter: blur(5px);
+		-o-backdrop-filter: blur(5px);
 		backdrop-filter: blur(5px);
+
 		background-color: rgba(255, 255, 255, 0.5);
 
 		box-shadow: var(--default-shadow);

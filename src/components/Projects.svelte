@@ -2,8 +2,8 @@
 	import ProjectItem from './ProjectItem.svelte';
 </script>
 
-<div class="projects">
-	<h1>Projects</h1>
+<section>
+	<h1>Proyectos</h1>
 	<ProjectItem
 		description="MelodiMatch es una aplicación, desarrollada en Svelte con la API de Spotify, de descubrimiento musical que te ayuda a encontrar nueva música basada en tus artistas y canciones favoritos, guarda las canciones que descubres y crea una lista de reproducción con ellas."
 		title="Melodimatch"
@@ -25,17 +25,16 @@
 		live=""
 		github="https://github.com/JoseDv1/NaturAle"
 	/>
-</div>
+</section>
 
 <style>
-	.projects {
-		margin: 4rem 0;
+	section {
+		font-size: 1.5rem;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
+		justify-content: center;
 		text-align: center;
-		padding: 0 10%;
 		gap: 1rem;
 		text-align: center;
 	}
