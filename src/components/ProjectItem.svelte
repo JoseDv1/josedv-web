@@ -19,6 +19,7 @@
 			{#if live}
 				<a href={live} target="_blank">Live</a>
 			{/if}
+
 			<a href={github} target="_blank">Github</a>
 		</div>
 	</article>
@@ -61,10 +62,10 @@
 
 	section article div {
 		width: 100%;
-		margin-top: 0.5rem;
+		padding: 1rem;
 		display: flex;
-		gap: 1rem;
 		justify-content: flex-end;
+		gap: 1rem;
 	}
 	section article div a {
 		color: #fff;
@@ -76,5 +77,11 @@
 	}
 	p {
 		font-size: 1.2rem;
+	}
+
+	@media (max-width: 600px) {
+		section article div {
+			justify-content: center;
+		}
 	}
 </style>

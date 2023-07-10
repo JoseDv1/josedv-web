@@ -6,10 +6,10 @@
 
 <div class="page">
 	<About />
-	<Services />
-	<Projects />
 	<!-- TODO: Add Formation and experience Component -->
 	<!-- TODO: Add Courses and certification component -->
+	<Services />
+	<Projects />
 	<!-- TODO: Add Hobbies Component -->
 	<!-- TODO: Add Contact component -->
 </div>

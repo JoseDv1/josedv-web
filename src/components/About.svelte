@@ -1,17 +1,23 @@
 <section>
 	<article>
 		<header>
-			<span>Jose David Villegas - 19 Años</span>
+			<div>
+				<span>Jose David Villegas Aristizabal</span>
+				<span>19 Años</span>
+				<span>Guatapé - Antioquia (Colombia)</span>
+			</div>
 			<div class="social">
 				<a href="https://github.com/JoseDv1">Github</a>
 				<a href="https://www.linkedin.com/in/josedv1/"> LinkedIn</a>
 				<a href="https://twitter.com/Jose_Dv1">Twitter</a>
 				<a href="https://cvapp.es/r/O5AqfB4py" target="_blank">Curriculum Vitae</a>
+				<a href="mailto:jose@josedv.com"> jose@josedv.com</a>
+				<a href="tel:+573103652785"><span>+57 3103652785</span></a>
 			</div>
 		</header>
-		<h1>Web Developer</h1>
+		<h1>Desarrollador Web</h1>
 		<p>
-			Estoy en busca de experiencia y oportunidades para crecer profesionalmente. <br />
+			Estoy en busca de experiencia laboral y oportunidades para crecer profesionalmente. <br />
 			Soy alguien competitivo que busca siempre el mejor resultado posible en cada proyecto. Me adapto
 			fácilmente a los cambios y a las nuevas ideas, y valoro la diversidad de opiniones y perspectivas.
 			Me gustan los retos y me enfoco en lo que hago, siempre busco aprender y mejorar. Preparado para
@@ -61,6 +67,19 @@
 		align-items: center;
 	}
 
+	article h1 {
+		margin-top: 1rem;
+	}
+
+	header :first-child {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		text-align: center;
+		gap: 1rem;
+	}
+
 	@media (max-width: 1000px) {
 		section {
 			font-size: 1.2rem;
@@ -68,22 +87,18 @@
 			flex-direction: column-reverse;
 			gap: 1.5rem;
 		}
-
-		section img {
-			width: 150px;
-			height: 150px;
-		}
-
-		section p {
-			font-size: 1.2rem;
-		}
 	}
 
 	@media (max-width: 500px) {
 		.social {
+			margin-top: 1rem;
 			justify-content: center;
 			align-items: center;
 			gap: 0.5rem;
+		}
+
+		article {
+			text-align: center;
 		}
 	}
 </style>
