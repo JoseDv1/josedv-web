@@ -31,7 +31,7 @@
 			description:
 				'Este portafolio fue desarrollado en Svelte y SvelteKit, y desplegado en github pages, donde puedes ver mis proyectos, habilidades y contactarme',
 			live: 'http://josedv.com',
-			github: ''
+			github: 'https://github.com/JoseDv1/josedv-web'
 		}
 	];
 </script>

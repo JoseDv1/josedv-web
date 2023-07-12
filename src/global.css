@@ -41,6 +41,7 @@ body {
 	animation: move-bg 60s ease-in-out infinite;
 }
 
+
 @keyframes move-bg {
 	0% {
 		background-position: bottom left;
@@ -71,6 +72,14 @@ a {
 
 a:hover {
 	color: var(--secondary);
+}
+
+ul {
+	list-style: none;
+}
+
+ol {
+	list-style: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -1,0 +1,400 @@
+<script>
+	const cursos = [
+		{
+			nombre: 'Full Stack Developer con JavaScript',
+			link: 'https://platzi.com/p/JoseDv1/learning-path/100-javascript-full-stack/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de PostgreSQL',
+			link: 'https://platzi.com/p/JoseDv1/curso/1480-postgresql/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Transformaciones y Transiciones en CSS',
+			link: 'https://platzi.com/p/JoseDv1/curso/2336-transformaciones-transiciones-css/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Python: Comprehensions, Funciones y Manejo de Errores',
+			link: 'https://platzi.com/p/JoseDv1/curso/4260-python-funciones/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Dart desde Cero',
+			link: 'https://platzi.com/p/JoseDv1/curso/2651-dart/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Fundamentos de Bases de Datos',
+			link: 'https://platzi.com/p/JoseDv1/curso/1566-bd/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Introducción a Java SE',
+			link: 'https://platzi.com/p/JoseDv1/curso/1631-course/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Introducción al Desarrollo Backend',
+			link: 'https://platzi.com/p/JoseDv1/curso/4656-backend/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Java SE Orientado a Objetos',
+			link: 'https://platzi.com/p/JoseDv1/curso/1629-java-oop/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso Básico de Figma: Prototipado y Diseño de Interfaces',
+			link: 'https://platzi.com/p/JoseDv1/curso/4038-course/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso Gratis de Inteligencia Artificial: ChatGPT, DALL-E y Hugging Face',
+			link: 'https://platzi.com/p/JoseDv1/curso/6935-course/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Creación de Portafolio para Desarrolladores Web',
+			link: 'https://platzi.com/p/JoseDv1/curso/6571-portafolio-desarrollo-web/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Diseño de Interfaces',
+			link: 'https://platzi.com/p/JoseDv1/curso/1493-diseno-interfaz/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Matemáticas para Data Science: Estadística Descriptiva',
+			link: 'https://platzi.com/p/JoseDv1/curso/2353-course/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Svelte',
+			link: 'https://platzi.com/p/JoseDv1/curso/1851-svelte/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso Profesional de Next.js',
+			link: 'https://platzi.com/p/JoseDv1/curso/2707-course/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso Práctico de Next.js',
+			link: 'https://platzi.com/p/JoseDv1/curso/2690-nextjs-practico/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Introducción a React.js',
+			link: 'https://platzi.com/p/JoseDv1/curso/2444-react/diploma/detalle/'
+		},
+
+		{
+			nombre: 'Curso Práctico de Frontend Developer',
+			link: 'https://platzi.com/p/JoseDv1/curso/2477-frontend-developer-practico/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Backend con Node.js: API REST con Express.js',
+			link: 'https://platzi.com/p/JoseDv1/curso/2485-backend-nodejs/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Frontend Developer',
+			link: 'https://platzi.com/p/JoseDv1/curso/2467-frontend-developer/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Fundamentos de Node.js',
+			link: 'https://platzi.com/p/JoseDv1/curso/1759-fundamentos-node/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso Básico de JavaScript',
+			link: 'https://platzi.com/p/JoseDv1/curso/1814-basico-javascript/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso Básico de Visualización de Datos con Matplotlib y Seaborn',
+			link: 'https://platzi.com/p/JoseDv1/curso/2913-matplotlib-seaborn/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso Definitivo de HTML y CSS',
+			link: 'https://platzi.com/p/JoseDv1/curso/2008-html-css/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso Práctico de HTML y CSS',
+			link: 'https://platzi.com/p/JoseDv1/curso/1758-html-practico/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso Práctico de JavaScript',
+			link: 'https://platzi.com/p/JoseDv1/curso/3271-javascript-practico/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Bootstrap 4',
+			link: 'https://platzi.com/p/JoseDv1/curso/1331-bootstrap/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Funciones Matemáticas para Data Science e Inteligencia Artificial',
+			link: 'https://platzi.com/p/JoseDv1/curso/2701-funciones-matematicas/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Introducción a Excel',
+			link: 'https://platzi.com/p/JoseDv1/curso/3639-excel-intro/diploma/detalle/'
+		},
+		{
+			nombre: 'Taller Práctico de JavaScript: Matemáticas y Estadística Básica',
+			link: 'https://platzi.com/p/JoseDv1/curso/3435-javascript-practico-matematicas/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso Básico de Manipulación y Transformación de Datos con Pandas y NumPy',
+			link: 'https://platzi.com/p/JoseDv1/curso/2912-pandas-numpy/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Tableau: Visualización de Datos y Storytelling para Negocios',
+			link: 'https://platzi.com/p/JoseDv1/curso/2197-tableau/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Business Intelligence: Utilidad y Áreas de Oportunidad',
+			link: 'https://platzi.com/p/JoseDv1/curso/2359-business-intelligence/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Principios de Visualización de Datos para Business Intelligence',
+			link: 'https://platzi.com/p/JoseDv1/curso/2195-visualizacion-datos/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Análisis de Negocios para Ciencia de Datos',
+			link: 'https://platzi.com/p/JoseDv1/curso/2069-negocios-data-science/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Entorno de Trabajo para Ciencia de Datos con Jupyter Notebooks y Anaconda',
+			link: 'https://platzi.com/p/JoseDv1/curso/2434-jupyter-notebook/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Introducción a la Terminal y Línea de Comandos',
+			link: 'https://platzi.com/p/JoseDv1/curso/2292-terminal/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Programación Orientada a Objetos: POO',
+			link: 'https://platzi.com/p/JoseDv1/curso/1474-oop/diploma/detalle/'
+		},
+		{
+			nombre: 'Cómo y Por Qué Aprender Data Science e Inteligencia Artificial',
+			link: 'https://platzi.com/p/JoseDv1/curso/2807-aprender-data-ia/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Análisis Técnico de Mercados Financieros',
+			link: 'https://platzi.com/p/JoseDv1/curso/2723-analisis-tecnico/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Introducción al Análisis Técnico de Mercados Financieros',
+			link: 'https://platzi.com/p/JoseDv1/curso/2722-analisis-tecnico-intro/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Programación de Videojuegos 2D con Unity',
+			link: 'https://platzi.com/p/JoseDv1/curso/1887-unity-2d/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de C# para Videojuegos',
+			link: 'https://platzi.com/p/JoseDv1/curso/1413-desarrollo-unity/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Introducción a C# con .NET 3.1',
+			link: 'https://platzi.com/p/JoseDv1/curso/2198-csharp-introduccion/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Introducción a la Programación de Videojuegos 3D con Unity',
+			link: 'https://platzi.com/p/JoseDv1/curso/1801-unity-3d/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de POO y Algoritmos con Python',
+			link: 'https://platzi.com/p/JoseDv1/curso/1775-poo-python/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso Profesional de Git y GitHub',
+			link: 'https://platzi.com/p/JoseDv1/curso/1557-git-github/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Dirección de Videojuegos',
+			link: 'https://platzi.com/p/JoseDv1/curso/1485-avanzado-videojuegos/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Escritura de Personajes y NPC en Videojuegos',
+			link: 'https://platzi.com/p/JoseDv1/curso/1509-personajes-npcs/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Introducción al Pensamiento Computacional con Python',
+			link: 'https://platzi.com/p/JoseDv1/curso/1764-python-cs/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso Básico de Python',
+			link: 'https://platzi.com/p/JoseDv1/curso/1937-python-basico/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso Profesional de Diseño de Videojuegos',
+			link: 'https://platzi.com/p/JoseDv1/curso/1910-profesional-diseno-videojuegos/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Creación de Videojuegos',
+			link: 'https://platzi.com/p/JoseDv1/curso/1062-creacion-videojuegos/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Diseño de Videojuegos',
+			link: 'https://platzi.com/p/JoseDv1/curso/1783-diseno-videojuegos/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Diseño y Prototipado de Personajes',
+			link: 'https://platzi.com/p/JoseDv1/curso/1251-prototipado-personajes/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Fotografía con tu Celular',
+			link: 'https://platzi.com/p/JoseDv1/curso/1628-fotografia-telefono/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso Básico de Programación',
+			link: 'https://platzi.com/p/JoseDv1/curso/1050-basico-programacion/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Fundamentos de Matemáticas',
+			link: 'https://platzi.com/p/JoseDv1/curso/1393-fundamentos-matematicas/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Fundamentos de Matemáticas para Física',
+			link: 'https://platzi.com/p/JoseDv1/curso/1447-fisica-matematica/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Introducción a la Producción de Videojuegos',
+			link: 'https://platzi.com/p/JoseDv1/curso/2269-produccion-videojuegos/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Planeación y Dirección de Videojuegos Indies',
+			link: 'https://platzi.com/p/JoseDv1/curso/2433-direccion-videojuegos-indies/diploma/detalle/'
+		},
+		{
+			nombre: 'Curso de Álgebra',
+			link: 'https://platzi.com/p/JoseDv1/curso/1449-algebra/diploma/detalle/'
+		}
+	];
+</script>
+
+<section class="formation-and-expierence">
+	<h2>Formacion y experiencia</h2>
+	<main>
+		<section>
+			<h3>Formacion</h3>
+			<ul>
+				<li>
+					<article>
+						<h4>Estudiante de Plazti, Remoto</h4>
+						<p>Agosto 2019 - Presente</p>
+
+						<details>
+							<summary> Ver todos los cursos y certifiaciones de Platzi </summary>
+							<ul>
+								{#each cursos as { nombre, link }}
+									<li>
+										<a href={link} target="_blank">{nombre}</a>
+									</li>
+								{/each}
+							</ul>
+						</details>
+					</article>
+				</li>
+				<li>
+					<h4>Instucion Educativa Nuestra Señora del Pilar</h4>
+					<p>Enero 2006 - Noviembre 2020</p>
+					<ul>
+						<li>Titulo de Bachiller</li>
+						<li>Graduado con excelente desempeño academico</li>
+						<li>3er lugar de la Institución en las pruebas ICFES 2020</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h3>Experiencia</h3>
+			<ul>
+				<li>
+					<article>
+						<h4>Propietario en Stone Drinks (Bar), Guatapé, Antioquia, Colombia</h4>
+						<p>Marzo 2021 - Presente</p>
+						<ul>
+							<li>Desarrolle e implemente contenidos para el sitio web de la empresa.</li>
+							<li>Experiencia en Planificación de proyectos</li>
+							<li>Habilidades de Liderazgo</li>
+							<li>habilidades de Trabajo en equipo</li>
+						</ul>
+					</article>
+				</li>
+				<li>
+					<article>
+						<h4>Profesor Frontend</h4>
+						<p>Abril 2023 - Agosto 2023</p>
+						<ul>
+							<li>
+								Planifiqué e impartí clases practicas de desarrollo a estudiantes del curso de
+								programación de Guatapé donde al finalizar el curso pudieron desarrollar el Frontend
+								completo de una aplicación
+							</li>
+						</ul>
+					</article>
+				</li>
+			</ul>
+		</section>
+	</main>
+</section>
+
+<style>
+	section.formation-and-expierence {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		font-size: 1.5rem;
+		width: 100%;
+		gap: 1rem;
+	}
+
+	section h2 {
+		text-align: center;
+	}
+
+	main {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+	}
+
+	main section {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		padding: 2rem;
+		-wenkit-backdrop-filter: blur(5px);
+		-moz-backdrop-filter: blur(5px);
+		-o-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
+		border-radius: 50px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: var(--default-shadow);
+		width: 100%;
+	}
+
+	section > ul {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	section > ul > li::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 1px;
+		margin-top: 1rem;
+		background-color: var(--black);
+	}
+
+	h4 + p {
+		margin-bottom: 0.5rem;
+		font-size: 1.2rem;
+	}
+
+	article li::before,
+	h4 ~ ul > li::before {
+		content: '';
+		display: inline-block;
+		width: 16px;
+		aspect-ratio: 1/1;
+		margin-right: 0.5rem;
+		background-image: url(/marioMush.webp);
+		background-size: contain;
+	}
+
+	@media (max-width: 1000px) {
+		section.formation-and-expierence {
+			font-size: 1.2rem;
+		}
+	}
+</style>

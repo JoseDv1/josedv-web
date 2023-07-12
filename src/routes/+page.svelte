@@ -2,12 +2,12 @@
 	import About from '../components/About.svelte';
 	import Services from '../components/Services.svelte';
 	import Projects from '../components/Projects.svelte';
+	import Formation from '../components/Formation.svelte';
 </script>
 
 <div class="page">
 	<About />
-	<!-- TODO: Add Formation and experience Component -->
-	<!-- TODO: Add Courses and certification component -->
+	<Formation />
 	<Services />
 	<Projects />
 	<!-- TODO: Add Hobbies Component -->
