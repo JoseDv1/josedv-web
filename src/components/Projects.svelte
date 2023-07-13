@@ -36,8 +36,8 @@
 	];
 </script>
 
+<h1>Proyectos</h1>
 <section>
-	<h1>Proyectos</h1>
 	{#each items as item}
 		<ProjectItem {...item} />
 	{/each}
@@ -47,11 +47,10 @@
 	section {
 		font-size: 1.5rem;
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		flex-flow: row wrap;
+		align-items: stretch;
 		justify-content: center;
 		text-align: center;
 		gap: 1rem;
-		text-align: center;
 	}
 </style>

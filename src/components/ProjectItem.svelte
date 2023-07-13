@@ -15,7 +15,7 @@
 		<p>
 			{description}
 		</p>
-		<div>
+		<div class="buttons">
 			{#if live}
 				<a href={live} target="_blank">Live</a>
 			{/if}
@@ -27,12 +27,11 @@
 
 <style>
 	section {
+		width: calc(50% - 1rem);
 		padding: 1rem 2rem;
 
-		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
-
 		justify-content: space-around;
 		align-items: center;
 		gap: 2rem;
@@ -60,26 +59,37 @@
 		text-align: left;
 	}
 
-	section article div {
+	.buttons {
 		width: 100%;
 		padding: 1rem;
 		display: flex;
 		justify-content: flex-end;
 		gap: 1rem;
 	}
-	section article div a {
+	.buttons a {
 		color: #fff;
 		background-color: var(--primary);
 		box-shadow: var(--default-shadow);
 
 		padding: 0.5rem 1rem;
 		border-radius: 0.5rem;
+		transition: transform 0.3s ease-in-out;
 	}
+
+	.buttons a:hover {
+		transform: scale(1.1);
+	}
+
 	p {
 		font-size: 1.2rem;
 	}
 
-	@media (max-width: 600px) {
+	@media (max-width: 700px) {
+		section {
+			width: 100%;
+			padding: 1rem;
+		}
+
 		section article div {
 			justify-content: center;
 		}

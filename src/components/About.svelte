@@ -15,15 +15,17 @@
 				<a href="tel:+573103652785"><span>+57 3103652785</span></a>
 			</div>
 		</header>
-		<h1>Desarrollador Web</h1>
-		<p>
-			Estoy en busca de experiencia laboral y oportunidades para crecer profesionalmente. <br />
-			Soy alguien competitivo que busca siempre el mejor resultado posible en cada proyecto. Me adapto
-			fácilmente a los cambios y a las nuevas ideas, y valoro la diversidad de opiniones y perspectivas.
-			Me gustan los retos y me enfoco en lo que hago, siempre busco aprender y mejorar. Preparado para
-			utilizar mis habilidades y pasión para impulsar la misión de una compañía. Aporto una actitud positiva,
-			la voluntad y motivación
-		</p>
+		<div>
+			<h1>Desarrollador Web</h1>
+			<p>
+				Estoy en busca de experiencia laboral y oportunidades para crecer profesionalmente. <br />
+				Soy alguien competitivo que busca siempre el mejor resultado posible en cada proyecto. Me adapto
+				fácilmente a los cambios y a las nuevas ideas, y valoro la diversidad de opiniones y perspectivas.
+				Me gustan los retos y me enfoco en lo que hago, siempre busco aprender y mejorar. Preparado para
+				utilizar mis habilidades y pasión para impulsar la misión de una compañía. Aporto una actitud
+				positiva, la voluntad y motivación
+			</p>
+		</div>
 	</article>
 	<img src="/Jose.webp" alt="JoseDv1" />
 </section>
@@ -39,15 +41,28 @@
 		background-color: rgba(255, 255, 255, 0.5);
 		box-shadow: var(--default-shadow);
 		display: flex;
-		gap: 1.5rem;
+		gap: 2rem;
 		justify-content: center;
-		align-items: center;
 		font-size: 1.5rem;
+		min-height: 70dvh;
+	}
+
+	article {
+		display: flex;
+		flex-direction: column;
+	}
+
+	article > div {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	section img {
-		width: 200px;
-		height: 200px;
+		align-self: center;
+		width: 500px;
+		height: 500px;
 		border-radius: 50%;
 		margin-right: 20px;
 		box-shadow: var(--default-shadow);

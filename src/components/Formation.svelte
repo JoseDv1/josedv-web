@@ -257,7 +257,6 @@
 </script>
 
 <section class="formation-and-expierence">
-	<h2>Formacion y experiencia</h2>
 	<main>
 		<section>
 			<h3>Formacion</h3>
@@ -302,7 +301,7 @@
 							<li>Desarrolle e implemente contenidos para el sitio web de la empresa.</li>
 							<li>Experiencia en Planificación de proyectos</li>
 							<li>Habilidades de Liderazgo</li>
-							<li>habilidades de Trabajo en equipo</li>
+							<li>Habilidades de Trabajo en equipo</li>
 						</ul>
 					</article>
 				</li>
@@ -334,10 +333,6 @@
 		gap: 1rem;
 	}
 
-	section h2 {
-		text-align: center;
-	}
-
 	main {
 		display: flex;
 		flex-flow: row wrap;
@@ -351,6 +346,7 @@
 		flex-direction: column;
 		gap: 1rem;
 		padding: 2rem;
+
 		-wenkit-backdrop-filter: blur(5px);
 		-moz-backdrop-filter: blur(5px);
 		-o-backdrop-filter: blur(5px);
@@ -358,6 +354,7 @@
 		border-radius: 50px;
 		background-color: rgba(255, 255, 255, 0.5);
 		box-shadow: var(--default-shadow);
+
 		width: 100%;
 	}
 
@@ -385,11 +382,16 @@
 	h4 ~ ul > li::before {
 		content: '';
 		display: inline-block;
-		width: 16px;
+		width: 32px;
 		aspect-ratio: 1/1;
 		margin-right: 0.5rem;
 		background-image: url(/marioMush.webp);
 		background-size: contain;
+	}
+
+	article li:hover::before,
+	h4 ~ ul > li:hover::before {
+		animation: bounce 0.5s linear infinite;
 	}
 
 	@media (max-width: 1000px) {

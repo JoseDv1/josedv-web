@@ -27,6 +27,11 @@
 
 		box-shadow: var(--default-shadow);
 		border-radius: 50px;
+		transition: transform 0.3s ease-in-out;
+	}
+
+	.frame:hover {
+		transform: scale(1.1);
 	}
 
 	.frame img {

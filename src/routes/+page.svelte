@@ -3,6 +3,7 @@
 	import Services from '../components/Services.svelte';
 	import Projects from '../components/Projects.svelte';
 	import Formation from '../components/Formation.svelte';
+	import Hobbies from '../components/Hobbies.svelte';
 </script>
 
 <div class="page">
@@ -10,8 +11,7 @@
 	<Formation />
 	<Services />
 	<Projects />
-	<!-- TODO: Add Hobbies Component -->
-	<!-- TODO: Add Contact component -->
+	<Hobbies />
 </div>
 
 <style>

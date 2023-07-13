@@ -1,0 +1,139 @@
+<script>
+	import Frame from './Frame.svelte';
+
+	let hobbies = [
+		'Jugar Videojuegos',
+		'Practicar Tennis',
+		'BMX',
+		'Astrofotografía',
+		'Astronomía',
+		'Ajedrez',
+		'Volleyball',
+		'Ver noticias de IA',
+		'Economia'
+	];
+
+	let social = [
+		{
+			title: 'Facebook',
+			link: 'https://facebook.com/josedv23',
+			img: 'social/facebook.svg'
+		},
+		{
+			title: 'Instagram',
+			link: 'https://www.instagram.com/jose_dv1/',
+			img: 'social/instagram.svg'
+		},
+		{
+			title: 'Twitter',
+			link: 'https://twitter.com/Jose_Dv1',
+			img: 'social/twitter.svg'
+		},
+		{
+			title: 'LinkedIn',
+			link: 'https://www.linkedin.com/in/josedv1/',
+			img: 'social/linkedin.svg'
+		},
+		{
+			title: 'GitHub',
+			link: 'https://github.com/JoseDv1',
+			img: 'social/github.svg'
+		},
+		{
+			title: 'Email',
+			link: 'mailto:jose@josedv.com',
+			img: 'social/mail.svg'
+		}
+	];
+</script>
+
+<section class="hobbies-contact">
+	<article class="hobbies">
+		<h3>Hobbies y Pasatiempos</h3>
+		<ul>
+			{#each hobbies as hobby}
+				<li>{hobby}</li>
+			{/each}
+		</ul>
+	</article>
+
+	<article class="contact">
+		<h3>Contacto</h3>
+		<ul>
+			{#each social as { title, img, link }}
+				<li>
+					<a href={link} target="_blank">
+						<Frame {title} {img} />
+					</a>
+				</li>
+			{/each}
+		</ul>
+	</article>
+</section>
+
+<style>
+	.hobbies-contact {
+		display: flex;
+		flex-wrap: wrap-reverse;
+		gap: 1rem;
+		width: 100%;
+		font-size: 1.5rem;
+	}
+
+	article {
+		padding: 2rem;
+		-wenkit-backdrop-filter: blur(5px);
+		-moz-backdrop-filter: blur(5px);
+		-o-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
+		border-radius: 50px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: var(--default-shadow);
+	}
+
+	.hobbies li::before {
+		content: '';
+		display: inline-block;
+		width: 32px;
+		aspect-ratio: 1/1;
+		margin-right: 0.5rem;
+		background-image: url(/marioMush.webp);
+		background-size: contain;
+	}
+
+	.hobbies li:hover::before {
+		animation: bounce 0.5s linear infinite;
+	}
+
+	.hobbies {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact {
+		flex: 2;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact ul {
+		flex: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5rem;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	@media (max-width: 768px) {
+		.hobbies-contact {
+			flex-direction: column;
+		}
+	}
+</style>
