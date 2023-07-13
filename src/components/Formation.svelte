@@ -267,7 +267,7 @@
 						<p>Agosto 2019 - Presente</p>
 
 						<details>
-							<summary> Ver todos los cursos y certifiaciones de Platzi </summary>
+							<summary> Ver todos los cursos y certificaciones de Platzi </summary>
 							<ul>
 								{#each cursos as { nombre, link }}
 									<li>
