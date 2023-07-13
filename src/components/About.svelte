@@ -44,7 +44,7 @@
 		gap: 2rem;
 		justify-content: center;
 		font-size: 1.5rem;
-		min-height: 70dvh;
+		width: 100%;
 	}
 
 	article {
@@ -59,12 +59,12 @@
 		justify-content: center;
 	}
 
-	section img {
+	img {
+		width: 100%;
+		max-width: 400px;
+		aspect-ratio: 1/1;
 		align-self: center;
-		width: 500px;
-		height: 500px;
 		border-radius: 50%;
-		margin-right: 20px;
 		box-shadow: var(--default-shadow);
 		border: 1px solid var(--black);
 	}
@@ -101,6 +101,10 @@
 			display: flex;
 			flex-direction: column-reverse;
 			gap: 1.5rem;
+		}
+
+		img {
+			width: 100%;
 		}
 	}
 
