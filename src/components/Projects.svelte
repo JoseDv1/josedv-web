@@ -27,11 +27,12 @@
 			github: 'https://github.com/JoseDv1/NaturAle'
 		},
 		{
-			title: 'Portafolio',
+			title: 'Cris Tales',
 			description:
-				'Este portafolio fue desarrollado en Svelte y SvelteKit, y desplegado en github pages, donde puedes ver mis proyectos, habilidades y contactarme',
-			live: 'http://josedv.com',
-			github: 'https://github.com/JoseDv1/josedv-web'
+				'Este proyecto es un clon de la página oficial del videojuego Cris Tales, desarrollado en Svelte con SvelteKit',
+			live: 'https://clon-cristales-svelte.vercel.app/',
+			github: 'https://github.com/JoseDv1/clon-cristales-svelte',
+			img: '/CrisTales.webp'
 		}
 	];
 </script>
