@@ -1,54 +1,64 @@
-# Astro Starter Kit: Basics
 
-```sh
-npm create astro@latest -- --template basics
-```
+# José David Villegas Aristizábal
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Web Developer
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Guatapé - Antioquia
++57 3103652785
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Estoy en busca de experiencia laboral y oportunidades para crecer profesionalmente. Soy alguien competitivo que busca siempre el mejor resultado posible en cada proyecto. Me adapto fácilmente a los cambios y a las nuevas ideas, y valoro la diversidad de opiniones y perspectivas. Me gustan los retos y me enfoco en lo que hago, siempre busco aprender y mejorar. Preparado para utilizar mis habilidades y pasión para impulsar la misión de una compañía. Aporto una actitud positiva, la voluntad y motivación.
 
-## 🚀 Project Structure
+## Información Personal
 
-Inside of your Astro project, you'll see the following folders and files:
+- Dirección: Guatapé - Antioquia - Colomia
+- Aficiones: Jugar Videojuegos, Practicar Tennis, BMX, Astrofotografía, Astronomía, Ajedrez, Volleyball, Ver noticias de IA, Aprender de Economía
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Perfiles en Redes Sociales
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- LinkedIn: [josedv1](https://www.linkedin.com/in/josedv1/)
+- Twitter: [@Jose_Dv1](https://twitter.com/Jose_Dv1)
+- Instagram: [jose_dv1](https://www.instagram.com/jose_dv1/)
+- Facebook: [JoseDv23](https://www.facebook.com/JoseDv23)
+- Github: [JoseDv1](https://github.com/JoseDv1)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Idiomas
 
-Any static assets, like images, can be placed in the `public/` directory.
+- ★★★★☆ Inglés B2
 
-## 🧞 Commands
+## Competencias
 
-All commands are run from the root of the project, from a terminal:
+- Svelte
+- SvelteKit
+- React
+- PostgreSQL
+- Supabase
+- Flutter
+- Firebase
+- Git & Github
+- Next.js
+- Express
+- Bootstrap
+- HTML & CSS
+- JavaScript
+- Node.js
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Experiencia Laboral
 
-## 👀 Want to learn more?
+- Marzo 2021 - Presente: Propietario en Stone Drinks (Bar), Guatapé
+  - Desarrollé e implementé contenidos para el sitio web de la empresa.
+  - Planificación de proyectos.
+  - Liderazgo.
+  - Trabajo en equipo.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Marzo 2023 - 2023: Profesor Frontend en Guatapé
+  - Impartí clases prácticas de desarrollo a estudiantes del curso de programación de Guatapé, donde al finalizar el curso pudieron desarrollar el Frontend completo de una aplicación.
+
+## Formación
+
+- Agosto 2019 - Presente: Plazti, Remoto
+  - Autodidacta.
+  - Nunca paro de aprender.
+
+- Enero 2006 - Noviembre 2020: Institución Educativa Nuestra Señora del Pilar Guatapé, Guatapé Bachiller
+  - Graduado con excelente desempeño académico en el área de Matemáticas y Tecnología.
+  - 3er lugar de la Institución en las pruebas ICFES 2020 con un puntaje de 347/500.
