@@ -1,12 +1,11 @@
 ---
-slug: my-first-post-1
 title: My First Post
-date: 2019-01-01
-url: my-first-post
+description: This is my first post.
+publishedDate: '10/3/2023'
+tags: ['first', 'post']
+image: https://via.placeholder.com/2000.png?text=Blog+Image
+slug: my-first-post
 ---
 
-This is my first post.
-
-```js
-console.log('Hello World');
-```
+Estoy emocionado de escribir mi primer post en mi nuevo blog de Astro. ¡Espero que te guste!
+este blog contendra mucha informacion util como tips, recursos y retos que te ayudaran en el mundo del desarrollo web.

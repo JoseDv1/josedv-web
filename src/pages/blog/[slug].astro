@@ -1,21 +1,62 @@
 ---
-export const getStaticPaths = async () => {
+import Layout from "../../layouts/Layout.astro";
+
+const allPosts = await Astro.glob("../../content/posts/*.md");
+
+export async function getStaticPaths() {
 	const allPosts = await Astro.glob("../../content/posts/*.md");
-	console.log(allPosts);
 
-	return allPosts.map((post) => ({
-		params: {
-			slug: post.frontmatter.slug,
-		},
-		props: {
-			title: post.frontmatter.title,
-		},
-	}));
-};
+	return allPosts.map(
+		({
+			frontmatter: { title, description, image, slug, tags, publishedDate },
+		}) => ({
+			params: {
+				slug,
+			},
+			props: {
+				title,
+				description,
+				image,
+				slug,
+				tags,
+				publishedDate,
+			},
+		})
+	);
+}
 
-const { title } = Astro.props;
+const post = allPosts.find(
+	({ frontmatter: { slug } }) => slug === Astro.params.slug
+);
+
+if (!post) {
+	return {
+		status: 404,
+	};
+}
+
+const { Content } = post;
+
+const { title, description, image, tags, publishedDate } = Astro.props;
 const { slug } = Astro.params;
 ---
 
-<h1>{title}</h1>
-<p>You are in page {slug}</p>
+<Layout title={title}>
+	<main class="p-4 lg:p-8">
+		<div
+			class="bg-white bg-opacity-50 backdrop-blur-md md:w-4/5
+			mx-auto h-full p-4 rounded-md border border-white shadow-lg flex flex-col gap-4"
+		>
+			<h1 class="text-4xl font-bold">{title}</h1>
+			<p class="text-red-800 text-sm">{publishedDate}</p>
+			<p class="text-red-800 text-sm">{description}</p>
+			<div class="self-center max-w-lg">
+				<img src={image} alt={title} />
+			</div>
+
+			<div class="p-4">
+				<Content />
+			</div>
+		</div>
+	</main>
+</Layout>
