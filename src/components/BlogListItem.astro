@@ -53,12 +53,11 @@ const formattedDate = date.toLocaleDateString("es-US", {
 				<p>
 					{formattedDate}
 				</p>
-				<div class="flex gap-4">
-					{
-						tags.map((tag) => (
-							<span class="bg-red-200 rounded-md px-2 capitalize">#{tag}</span>
-						))
-					}
+				<div class="flex gap-4 flex-wrap">
+					<span class="bg-red-200 rounded-md px-2 capitalize">#{tags[0]}</span>
+					<span class="bg-red-200 rounded-md px-2 capitalize">#{tags[1]}</span>
+					<span class="bg-red-200 rounded-md px-2 capitalize">#{tags[2]}</span>
+					<span class="bg-red-200 rounded-md px-2 capitalize">#{tags[3]}</span>
 				</div>
 			</footer>
 		</section>
