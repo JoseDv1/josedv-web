@@ -1,11 +1,13 @@
-<script>
-	// Props
-	export let img;
-	export let title;
-	export let description;
-	export let live;
-	export let github;
-</script>
+---
+interface Props {
+	title: string;
+	description: string;
+	img: string;
+	github: string;
+	live?: string;
+}
+const { description, github, img, title, live } = Astro.props;
+---
 
 <section>
 	<img src={img} alt={title} />
@@ -16,9 +18,13 @@
 			{description}
 		</p>
 		<div class="buttons">
-			{#if live}
-				<a href={live} target="_blank">Live</a>
-			{/if}
+			{
+				live && (
+					<a href={live} target="_blank">
+						Live
+					</a>
+				)
+			}
 
 			<a href={github} target="_blank">Github</a>
 		</div>

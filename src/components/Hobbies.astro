@@ -1,72 +1,75 @@
-<script>
-	import Frame from './Frame.svelte';
+---
+import Frame from "./Frame.astro";
 
-	let hobbies = [
-		'Jugar Videojuegos',
-		'Practicar Tennis',
-		'BMX',
-		'Astrofotografía',
-		'Astronomía',
-		'Ajedrez',
-		'Volleyball',
-		'Ver noticias de IA',
-		'Economia'
-	];
+let hobbies = [
+	"Jugar Videojuegos",
+	"Practicar Tennis",
+	"BMX",
+	"Astrofotografía",
+	"Astronomía",
+	"Ajedrez",
+	"Volleyball",
+	"Ver noticias de IA",
+	"Economia",
+];
 
-	let social = [
-		{
-			title: 'Facebook',
-			link: 'https://facebook.com/josedv23',
-			img: 'social/facebook.svg'
-		},
-		{
-			title: 'Instagram',
-			link: 'https://www.instagram.com/jose_dv1/',
-			img: 'social/instagram.svg'
-		},
-		{
-			title: 'Twitter',
-			link: 'https://twitter.com/Jose_Dv1',
-			img: 'social/twitter.svg'
-		},
-		{
-			title: 'LinkedIn',
-			link: 'https://www.linkedin.com/in/josedv1/',
-			img: 'social/linkedin.svg'
-		},
-		{
-			title: 'GitHub',
-			link: 'https://github.com/JoseDv1',
-			img: 'social/github.svg'
-		},
-		{
-			title: 'Email',
-			link: 'mailto:jose@josedv.com',
-			img: 'social/mail.svg'
-		}
-	];
-</script>
+let social = [
+	{
+		title: "Facebook",
+		link: "https://facebook.com/josedv23",
+		img: "social/facebook.svg",
+	},
+	{
+		title: "Instagram",
+		link: "https://www.instagram.com/jose_dv1/",
+		img: "social/instagram.svg",
+	},
+	{
+		title: "Twitter",
+		link: "https://twitter.com/Jose_Dv1",
+		img: "social/twitter.svg",
+	},
+	{
+		title: "LinkedIn",
+		link: "https://www.linkedin.com/in/josedv1/",
+		img: "social/linkedin.svg",
+	},
+	{
+		title: "GitHub",
+		link: "https://github.com/JoseDv1",
+		img: "social/github.svg",
+	},
+	{
+		title: "Email",
+		link: "mailto:jose@josedv.com",
+		img: "social/mail.svg",
+	},
+];
+---
 
 <section class="hobbies-contact">
 	<article class="hobbies">
 		<h3>Hobbies y Pasatiempos</h3>
 		<ul>
-			{#each hobbies as hobby}
-				<li>{hobby}</li>
-			{/each}
+			<ul>
+				{hobbies.map((hobby) => <li>{hobby}</li>)}
+			</ul>
 		</ul>
 	</article>
 
 	<article class="contact">
 		<h3>Contacto</h3>
 		<ul>
-			{#each social as { title, img, link }}
-				<li>
-					<a href={link} target="_blank">
-						<Frame {title} {img} />
-					</a>
-				</li>
-			{/each}
+			{
+				social.map(({ title, link, img }) => (
+					<li>
+						<a href={link} target="_blank">
+							<Frame {title} {img} />
+						</a>
+					</li>
+				))
+			}
+			 
 		</ul>
 	</article>
 </section>
@@ -92,7 +95,7 @@
 	}
 
 	.hobbies li::before {
-		content: '';
+		content: "";
 		display: inline-block;
 		width: 32px;
 		aspect-ratio: 1/1;
