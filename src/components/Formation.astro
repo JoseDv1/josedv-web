@@ -263,7 +263,7 @@ const cursos = [
 ];
 ---
 
-<section class="formation-and-expierence">
+<section class="formation-and-expierence" id="formation">
 	<main>
 		<section>
 			<h3>Formacion</h3>
@@ -345,6 +345,11 @@ const cursos = [
 </section>
 
 <style>
+	h3 {
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
 	section.formation-and-expierence {
 		display: flex;
 		flex-direction: column;
@@ -374,7 +379,7 @@ const cursos = [
 		backdrop-filter: blur(5px);
 		border-radius: 50px;
 		background-color: rgba(255, 255, 255, 0.5);
-		box-shadow: var(--default-shadow);
+		@apply shadow-lg;
 
 		width: 100%;
 	}

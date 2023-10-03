@@ -1,0 +1,66 @@
+---
+interface Props {
+	title: string;
+	description: string;
+	publishedDate: string;
+	tags: string[];
+	image: string;
+	slug: string;
+}
+
+const { title, description, image, slug, tags, publishedDate } = Astro.props;
+
+const date = new Date(publishedDate);
+const formattedDate = date.toLocaleDateString("es-US", {
+	year: "numeric",
+	month: "long",
+	day: "numeric",
+});
+---
+
+<a href={`/blog/${slug}`}>
+	<div
+		class="flex
+	flex-col
+	max-w-xs
+	sm:max-w-none
+	gap-4
+	sm:flex-row
+	max-h-min
+	rounded-md
+	hover:text-black
+	hover:bg-opacity-25
+	hover:backdrop-blur-lg
+	p-4
+	hover:outline-red-600
+	hover:outline hover:shadow-lg transition-all"
+	>
+		<!-- Image -->
+		<div class="basis-64 backdrop-blur-md bg-white bg-opacity-25 rounded-2xl">
+			<img
+				src={image}
+				alt={title}
+				class="rounded-md object-cover w-full h-full"
+			/>
+		</div>
+		<!-- Content -->
+		<section class="flex-1 p-2 flex flex-col justify-center">
+			<h1 class="text-lg md:text-2xl">{title}</h1>
+			<p class="text-base md:text-lg flex-initial">
+				{description}
+			</p>
+			<footer class="text-sm md:text-base flex flex-col gap-4">
+				<p>
+					{formattedDate}
+				</p>
+				<div class="flex gap-4">
+					{
+						tags.map((tag) => (
+							<span class="bg-red-200 rounded-md px-2 capitalize">#{tag}</span>
+						))
+					}
+				</div>
+			</footer>
+		</section>
+	</div>
+</a>

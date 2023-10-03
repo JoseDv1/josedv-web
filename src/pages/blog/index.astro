@@ -1,0 +1,53 @@
+---
+import type { Code } from "astro:components";
+import BlogListItem from "../../components/BlogListItem.astro";
+import Layout from "../../layouts/Layout.astro";
+
+interface Post {
+	title: string;
+	description: string;
+	publishedDate: string;
+	tags: string[];
+	image: string;
+	slug: string;
+}
+
+const posts = await Astro.glob("../../content/posts/*.md");
+---
+
+<Layout title="JoseDv1 Blog">
+	<main class="p-4 lg:p-8 w-full">
+		<div
+			class="bg-white bg-opacity-50 backdrop-blur-md w-full
+			h-full p-4 rounded-md border border-white shadow-lg"
+		>
+			<ul>
+				{
+					posts.map(
+						({
+							frontmatter: {
+								title,
+								description,
+								image,
+								slug,
+								tags,
+								publishedDate,
+							},
+						}) => (
+							<li>
+								<BlogListItem
+									description={description}
+									image={image}
+									publishedDate={publishedDate}
+									slug={slug}
+									tags={tags}
+									title={title}
+								/>
+							</li>
+						)
+					)
+				}
+			</ul>
+		</div>
+	</main>
+</Layout>
