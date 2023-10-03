@@ -45,18 +45,44 @@ const { slug } = Astro.params;
 	<main class="p-4 lg:p-8">
 		<div
 			class="bg-white bg-opacity-50 backdrop-blur-md md:w-4/5
-			mx-auto h-full p-4 rounded-md border border-white shadow-lg flex flex-col gap-4"
+			mx-auto h-full p-4 rounded-md border border-white shadow-lg flex flex-col gap-2"
 		>
 			<h1 class="text-4xl font-bold">{title}</h1>
-			<p class="text-red-800 text-sm">{publishedDate}</p>
-			<p class="text-red-800 text-sm">{description}</p>
-			<div class="self-center max-w-lg">
+			<p class="text-red-800 text-base">{publishedDate}</p>
+			<p class="text-red-800 text-base">{description}</p>
+			<div class="self-center max-w-lg rounded-2xl backdrop-blur-lg">
 				<img src={image} alt={title} />
 			</div>
 
-			<div class="p-4">
+			<div class="p-4" id="content">
 				<Content />
 			</div>
 		</div>
 	</main>
 </Layout>
+
+<style is:global>
+	#content > h1 {
+		@apply text-2xl font-bold text-center;
+	}
+
+	#content > h2 {
+		@apply text-xl font-bold mt-4;
+	}
+
+	#content > h3 {
+		@apply text-lg font-bold mt-4;
+	}
+
+	#content > pre {
+		@apply p-4 rounded-md bg-gray-800 text-white m-4;
+	}
+
+	#content code:not(pre > code) {
+		@apply p-1 rounded-md bg-gray-800 text-white;
+	}
+
+	#content > p:not(:last-of-type) {
+		@apply mb-4;
+	}
+</style>

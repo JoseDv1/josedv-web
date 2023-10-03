@@ -29,15 +29,14 @@ const formattedDate = date.toLocaleDateString("es-US", {
 	max-h-min
 	rounded-md
 	hover:text-black
-	hover:bg-red-500
-	hover:bg-opacity-50
+	hover:bg-opacity-25
 	hover:backdrop-blur-lg
 	p-4
-	hover:border-red-600
-	hover:border-2"
+	hover:outline-red-600
+	hover:outline hover:shadow-lg transition-all"
 	>
 		<!-- Image -->
-		<div class="basis-64">
+		<div class="basis-64 backdrop-blur-md bg-white bg-opacity-25 rounded-2xl">
 			<img
 				src={image}
 				alt={title}
@@ -46,7 +45,7 @@ const formattedDate = date.toLocaleDateString("es-US", {
 		</div>
 		<!-- Content -->
 		<section class="flex-1 p-2 flex flex-col justify-center">
-			<h1 class="text-lg md:text-xl">Blog Title</h1>
+			<h1 class="text-lg md:text-2xl">{title}</h1>
 			<p class="text-base md:text-lg flex-initial">
 				{description}
 			</p>

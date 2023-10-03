@@ -9,7 +9,7 @@ interface Props {
 const { description, github, img, title, live } = Astro.props;
 ---
 
-<section>
+<section id="projects">
 	<img src={img} alt={title} />
 
 	<article>
@@ -32,6 +32,12 @@ const { description, github, img, title, live } = Astro.props;
 </section>
 
 <style>
+	h3 {
+		font-size: 2rem;
+		margin-bottom: 0.5rem;
+		font-weight: bold;
+	}
+
 	section {
 		width: calc(50% - 1rem);
 		padding: 1rem 2rem;
