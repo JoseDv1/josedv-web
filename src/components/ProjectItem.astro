@@ -49,7 +49,7 @@ const { description, github, img, title, live } = Astro.props;
 		backdrop-filter: blur(5px);
 
 		background-color: rgba(255, 255, 255, 0.5);
-		box-shadow: var(--default-shadow);
+		@apply shadow-lg;
 	}
 	section img {
 		height: auto;
@@ -75,7 +75,7 @@ const { description, github, img, title, live } = Astro.props;
 	.buttons a {
 		color: #fff;
 		background-color: var(--primary);
-		box-shadow: var(--default-shadow);
+		@apply shadow-lg;
 
 		padding: 0.5rem 1rem;
 		border-radius: 0.5rem;
