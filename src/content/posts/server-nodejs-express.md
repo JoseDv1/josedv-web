@@ -3,7 +3,7 @@ title: Como hacer un servidor con NodeJs y Express
 description: Aqui encontraras una guia para crear un servidor desde cero con NodeJs y Express
 publishedDate: '10/3/2023'
 tags: ['nodejs', 'express', 'javascript', 'server', 'backend', 'web', 'dev']
-image: https://s6.imgcdn.dev/ZLDeq.png
+image: https://firebasestorage.googleapis.com/v0/b/josedv-web.appspot.com/o/NodeJs.png?alt=media
 slug: server-nodejs-express
 ---
 
