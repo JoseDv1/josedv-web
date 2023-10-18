@@ -6,4 +6,4 @@
 	);
 </script>
 
-<span>{edad} <A:tel />ños</span>
+<span>{edad} Años</span>
