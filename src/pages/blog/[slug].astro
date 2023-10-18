@@ -42,14 +42,14 @@ const { slug } = Astro.params;
 ---
 
 <BlogLayout title={title} description={description} keywords={tags}>
-	<main class="p-4 lg:p-8">
+	<main class="p-4 h-full overflow-auto">
 		<div
 			class="bg-white bg-opacity-50 backdrop-blur-md md:w-4/5
-			mx-auto h-full p-4 rounded-md border border-white shadow-lg flex flex-col gap-2"
+			mx-auto h-full p-4 rounded-md border border-white border-opacity-50 shadow-lg flex flex-col gap-2"
 		>
 			<h1 class="text-4xl font-bold">{title}</h1>
-			<p class="text-red-800 text-base">{publishedDate}</p>
-			<p class="text-red-800 text-base">{description}</p>
+			<p class="text-base">{publishedDate}</p>
+			<p class="text-base">{description}</p>
 			<div class="self-center max-w-lg rounded-2xl backdrop-blur-lg">
 				<img src={image} alt={title} />
 			</div>
@@ -79,7 +79,7 @@ const { slug } = Astro.params;
 	}
 
 	#content code:not(pre > code) {
-		@apply p-1 rounded-md bg-gray-800 text-white text-xs;
+		@apply p-1 rounded-md bg-gray-800 text-white text-xs break-words;
 	}
 
 	#content > p:not(:last-of-type) {

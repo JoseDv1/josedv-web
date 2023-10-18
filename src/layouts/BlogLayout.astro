@@ -23,7 +23,9 @@ const { title, description, keywords } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<main class="grid grid-cols-[100px,1fr] relative max-sm:grid-cols-1">
+		<main
+			class="grid grid-cols-[100px,1fr] relative max-sm:grid-cols-1 w-screen h-auto min-h-screen"
+		>
 			<Navbar />
 			<slot />
 		</main>
@@ -49,6 +51,8 @@ const { title, description, keywords } = Astro.props;
 			box-sizing: border-box;
 			padding: 0;
 			margin: 0;
+			/* Debug */
+			outline: 1px solid yellow;
 		}
 
 		body {
