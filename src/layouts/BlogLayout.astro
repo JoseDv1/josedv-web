@@ -26,7 +26,8 @@ const { title, description, keywords } = Astro.props;
 		<main
 			class="grid grid-cols-[100px,1fr] relative max-sm:grid-cols-1 w-screen h-auto min-h-screen"
 		>
-			This page is not available
+			<Navbar />
+			<slot />
 		</main>
 	</body>
 	<style is:global>
